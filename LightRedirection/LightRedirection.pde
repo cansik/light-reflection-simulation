@@ -1,4 +1,4 @@
-int rayCount = 11;
+int rayCount = 200;
 
 float lightSpeed = 3;
 
@@ -11,18 +11,18 @@ PVector lightSource;
 
 void setup()
 {
-  size(800, 600, FX2D);
+  size(600, 800, FX2D);
 
   // create light source
-  lightSource = new PVector(width / 2f, height / 8 * 7f);
+  lightSource = new PVector(width / 2f, height / 10 * 9f);
 
   // add light rays
   addRays(rayCount);
 
   // setup mirrors
-  mirrors.add(new Mirror(width / 2, height / 2, 100, 0));
-  mirrors.add(new Mirror(width / 4, height / 2, 100, 20));
-  mirrors.add(new Mirror(width / 4 * 3, height / 2, 100, 90));
+  mirrors.add(new Mirror(width / 2, 400, 50, -70));
+  mirrors.add(new Mirror(width / 2 + 60, 320, 50, 90));
+  mirrors.add(new Mirror(width / 2, 250, 50, 70 + 180));
 }
 
 void draw()
