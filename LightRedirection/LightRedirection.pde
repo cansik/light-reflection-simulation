@@ -21,7 +21,7 @@ void setup()
 
   // setup mirrors
   mirrors.add(new Mirror(width / 2, 400, 50, -70));
-  mirrors.add(new Mirror(width / 2 + 60, 320, 50, 90));
+  mirrors.add(new Mirror(width / 2 + 60, 320, 50, 100));
   mirrors.add(new Mirror(width / 2, 250, 50, 70 + 180));
 }
 
